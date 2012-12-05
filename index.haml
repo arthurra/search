@@ -2,8 +2,11 @@
 	%head
 		%link{:href => "css/font-awesome.css", :rel => "stylesheet"}
 		%link{:href => "css/style.css", :rel => "stylesheet"}
+		%link{:href => "http://fonts.googleapis.com/css?family=Scada:400,700", :rel => "stylesheet", :type => "text/css"}
+		%link{:href => 'http://fonts.googleapis.com/css?family=Cabin:400,500,600,700', :rel => 'stylesheet', :type => 'text/css'}
+
 	%body
 		%div.border
-			%input[type="text"]
-			%a.search
+			%input{:type => "text", :placeholder => "search"}
+			%a.button
 				%i.icon-search

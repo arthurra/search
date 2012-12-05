@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: "Cabin"; }
+
+body {
+  background: #1abeda; }
+
+.border {
+  width: 50%;
+  height: 55px;
+  margin: 100px 25%;
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.5), 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 84%;
+  height: 100%;
+  background: white;
+  color: #128599;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  input:focus {
+    outline: none;
+    box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15); }
+
+.button {
+  float: right;
+  width: 14%;
+  height: 100%;
+  margin: 0;
+  padding: 7px;
+  background: #1abeda;
+  text-align: center;
+  font-size: 2em;
+  color: #128599;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3); }
+  .button:active {
+    border-bottom: 0;
+    text-shadow: 0 0 0; }
