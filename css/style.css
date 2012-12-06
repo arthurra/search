@@ -3,14 +3,14 @@
   font-family: "Cabin"; }
 
 body {
-  background: #1abeda; }
+  background: #2e3136; }
 
 .border {
   width: 50%;
   height: 55px;
   margin: 100px 25%;
   padding: 7px;
-  background: rgba(255, 255, 255, 0.3);
+  background: #cec0ab;
   border-radius: 5px;
   box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.5), 0 1px 1px rgba(0, 0, 0, 0.15); }
 
@@ -19,15 +19,15 @@ input {
   appearance: none;
   width: 84%;
   height: 100%;
-  background: white;
-  color: #128599;
+  background: #eeeae0;
+  color: #fc6c46;
   font-size: 1em;
   font-weight: 600;
   padding: 10px;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
   input:focus {
     outline: none;
     box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15); }
@@ -37,15 +37,20 @@ input {
   width: 14%;
   height: 100%;
   margin: 0;
+  margin-right: -7px;
   padding: 7px;
-  background: #1abeda;
+  background: #fc6c46;
   text-align: center;
   font-size: 2em;
-  color: #128599;
-  border-radius: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: 5px 0 0 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3); }
   .button:active {
+    margin-top: 1px;
     border-bottom: 0;
     text-shadow: 0 0 0; }
+
+::-webkit-input-placeholder {
+  color: white; }
