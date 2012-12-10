@@ -15,20 +15,19 @@ body {
   .search-container:hover {
     width: 25em;
     border-radius: 5px 2em 2em 5px; }
-    .search-container:hover .button {
-      float: right; }
     .search-container:hover input {
       display: inline-block;
-      width: 15em;
+      width: 19em;
       padding: 10px; }
 
 input {
   -webkit-appearance: none;
   appearance: none;
-  display: inline-block;
+  float: left;
   width: 0em;
   height: 2em;
   margin: 1em;
+  margin-right: -1em;
   background: white;
   color: #6a5d4f;
   font-size: 1em;
@@ -44,7 +43,7 @@ input {
     box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15); }
 
 .button {
-  display: inline-block;
+  float: right;
   width: 1.75em;
   height: 1.75em;
   margin: 0.125em;
@@ -54,10 +53,9 @@ input {
   color: #fdf6e3;
   border-radius: 50%;
   box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.25);
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.25s; }
+  text-shadow: 0 -2px 1px rgba(0, 0, 0, 0.3); }
   .button i {
-    margin-top: 0.35em; }
+    margin-top: 0.45em; }
   .button:active {
-    border-bottom: 0;
+    border: 0 !important;
     text-shadow: 0 0 0; }
