@@ -5,6 +5,11 @@
 body {
   background: #fdf6e3; }
 
+.container {
+  display: block;
+  width: 25em;
+  margin: 100px auto; }
+
 .search-container {
   float: right;
   height: 4em;
