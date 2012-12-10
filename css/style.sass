@@ -7,52 +7,59 @@ body
 	background: #FDF6E3
 
 .search-container
+	float: right
 	height: 4em
 	width: 4em
-	border: 1px solid #6A5D4F
-	border-radius: 50%
+	//border: 1px solid #6A5D4F
+	border-radius: 2em
 	box-shadow: 0 0 5px #6A5D4F
 	-webkit-transition: all 0.25s
+	&:hover
+		width: 25em
+		border-radius: 5px 2em 2em 5px
+		.button
+			float: right
+		input
+			display: inline-block
+			width: 15em
+			padding: 10px
 
 input
 	-webkit-appearance: none
 	appearance: none
-	display: none
-	width: 0%
+	display: inline-block
+	width: 0em
 	height: 2em
 	margin: 1em
 	background: #fff
 	color: #6A5D4F
 	font-size: 1em
 	font-weight: 600
-	//border: 1px solid rgba(0,0,0,0.25)
-	padding: 10px
+	padding: 0px
 	border: 0
 	border-radius: 5px
-	//box-shadow: 0 1px 5px rgba(0,0,0,0.25)
 	box-shadow: 0 1px 5px rgba(0,0,0,0.2) inset
 	text-shadow: 0 1px 1px rgba(0,0,0,0.15)
+	-webkit-transition: all 0.25s
 	&:focus
 		outline: none
-		//border: 1px solid #1ABEDA
 		box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 5px rgba(0,0,0,0.15)
 
 .button
-	display: block
+	display: inline-block
 	width: 1.75em
 	height: 1.75em
-	margin: 0.1em
-	padding: 7px
+	margin: 0.125em
 	background: #6A5D4F
 	text-align: center
 	font-size: 2em
 	color: #FDF6E3
-	//border: 1px solid rgba(0,0,0,0.1)
 	border-radius: 50%
-	border-bottom: 1px solid rgba(0,0,0,0.25)
 	box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 1px rgba(0,0,0,0.25)
-	//text-shadow: 0 1px 1px rgba(0,0,0,0.25)
 	text-shadow: 0 1px 1px rgba(255,255,255,0.3), 0 -1px 1px rgba(0,0,0,0.3)
+	-webkit-transition: all 0.25s
+	i
+		margin-top: 0.35em
 	&:active
 		border-bottom: 0
 		text-shadow: 0 0 0
