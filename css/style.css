@@ -16,7 +16,7 @@ body {
   width: 4em;
   border-radius: 2em;
   box-shadow: 0 0 5px #6a5d4f;
-  -webkit-transition: all 0.25s; }
+  -webkit-transition: all 0.35s; }
   .search-container:hover {
     width: 25em;
     border-radius: 5px 2em 2em 5px; }
