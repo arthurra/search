@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-family: "Cabin"; }
 
 body {
@@ -13,9 +15,11 @@ body {
   background: #fdf6e3;
   border-radius: 5px;
   border: 1px solid transparent;
-  border-bottom: 3px solid transparent;
-  -webkit-transition: all 0.15s; }
+  border-bottom: 0px solid transparent;
+  -webkit-transition: all 0.2s; }
   .border:hover {
+    height: 58px;
+    margin-top: 97px;
     border: 1px solid #e6d9c3;
     border-bottom: 3px solid #e6d9c3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
@@ -23,6 +27,11 @@ body {
       opacity: 1; }
     .border:hover input {
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset; }
+  .border:active {
+    border: 1px solid #e6d9c3;
+    margin-top: 102px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    height: 53px; }
 
 input {
   -webkit-appearance: none;
@@ -38,9 +47,11 @@ input {
   border-radius: 5px;
   box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 0.2s; }
+  -webkit-transition: 0.25s; }
   input:focus {
     outline: none; }
+    input:focus + .button {
+      opacity: 1; }
 
 .button {
   opacity: 0;
@@ -60,4 +71,7 @@ input {
   -webkit-transition: all 0.4s; }
   .button:active {
     border-bottom: 0;
-    text-shadow: 0 0 0; }
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3); }
+    .button:active + .border {
+      border: 1px solid #e6d9c3;
+      margin-top: 2px; }
