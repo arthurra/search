@@ -3,16 +3,26 @@
   font-family: "Cabin"; }
 
 body {
-  background: #1abeda; }
+  background: #fdf6e3; }
 
 .border {
   width: 50%;
   height: 55px;
   margin: 100px 25%;
   padding: 7px;
-  background: rgba(255, 255, 255, 0.3);
+  background: #fdf6e3;
   border-radius: 5px;
-  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.5), 0 1px 1px rgba(0, 0, 0, 0.15); }
+  border: 1px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.15s; }
+  .border:hover {
+    border: 1px solid #e6d9c3;
+    border-bottom: 3px solid #e6d9c3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
+    .border:hover .button {
+      opacity: 1; }
+    .border:hover input {
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset; }
 
 input {
   -webkit-appearance: none;
@@ -20,32 +30,34 @@ input {
   width: 84%;
   height: 100%;
   background: white;
-  color: #128599;
+  color: #7d7a71;
   font-size: 1em;
   font-weight: 600;
   padding: 10px;
   border: 0;
   border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.2s; }
   input:focus {
-    outline: none;
-    box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15); }
+    outline: none; }
 
 .button {
+  opacity: 0;
   float: right;
   width: 14%;
   height: 100%;
   margin: 0;
-  padding: 7px;
-  background: #1abeda;
+  padding: 6px;
+  background: #c9beab;
   text-align: center;
   font-size: 2em;
-  color: #128599;
+  color: #fdf6e3;
   border-radius: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.25);
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3); }
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.4s; }
   .button:active {
     border-bottom: 0;
     text-shadow: 0 0 0; }

@@ -4,16 +4,26 @@
 	font-family: "Cabin"
 
 body
-	background: #1ABEDA
+	background: #FDF6E3
 
 .border
 	width: 50%
 	height: 55px
 	margin: 100px 25%
 	padding: 7px
-	background: rgba(255,255,255,0.3)
+	background: #FDF6E3
 	border-radius: 5px
-	box-shadow: 0 -1px 1px rgba(255,255,255,0.5), 0 1px 1px rgba(0,0,0,0.15)
+	border: 1px solid transparent
+	border-bottom: 3px solid transparent
+	-webkit-transition: all 0.15s
+	&:hover
+		border: 1px solid #E6D9C3
+		border-bottom: 3px solid #E6D9C3
+		box-shadow: 0 2px 5px rgba(0,0,0,0.25)
+		.button
+			opacity: 1
+		input
+			box-shadow: 0 1px 5px rgba(0,0,0,0.2) inset
 
 input
 	-webkit-appearance: none
@@ -21,37 +31,34 @@ input
 	width: 84%
 	height: 100%
 	background: #fff
-	color: #128599
+	color: #7D7A71
 	font-size: 1em
 	font-weight: 600
-	//border: 1px solid rgba(0,0,0,0.25)
 	padding: 10px
 	border: 0
 	border-radius: 5px
-	//box-shadow: 0 1px 5px rgba(0,0,0,0.25)
-	box-shadow: 0 1px 5px rgba(0,0,0,0.2) inset
+	box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 5px rgba(0,0,0,0.15)
 	text-shadow: 0 1px 1px rgba(0,0,0,0.15)
+	-webkit-transition: 0.2s
 	&:focus
 		outline: none
-		//border: 1px solid #1ABEDA
-		box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 5px rgba(0,0,0,0.15)
 
 .button
+	opacity: 0
 	float: right
 	width: 14%
 	height: 100%
 	margin: 0
-	padding: 7px
-	background: #1ABEDA
+	padding: 6px
+	background: #C9BEAB
 	text-align: center
 	font-size: 2em
-	color: #128599
-	//border: 1px solid rgba(0,0,0,0.1)
+	color: #FDF6E3
 	border-radius: 5px
 	border-bottom: 1px solid rgba(0,0,0,0.25)
 	box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 1px rgba(0,0,0,0.25)
-	//text-shadow: 0 1px 1px rgba(0,0,0,0.25)
-	text-shadow: 0 1px 1px rgba(255,255,255,0.3), 0 -1px 1px rgba(0,0,0,0.3)
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3)
+	-webkit-transition: all 0.4s
 	&:active
 		border-bottom: 0
 		text-shadow: 0 0 0
