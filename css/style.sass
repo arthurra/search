@@ -2,7 +2,6 @@
 	box-sizing: border-box
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
-	//font-family: "Scada"
 	font-family: "Cabin"
 
 body
@@ -17,7 +16,8 @@ body
 	border-radius: 5px
 	border: 1px solid transparent
 	border-bottom: 0px solid transparent
-	-webkit-transition: all 0.2s
+	-webkit-transition: all 0.15s
+	-moz-transition: all 0.15s
 	&:hover
 		height: 58px
 		margin-top: 97px
@@ -35,6 +35,7 @@ body
 		height: 53px
 
 input
+	-moz-appearance: none
 	-webkit-appearance: none
 	appearance: none
 	width: 84%
@@ -49,6 +50,7 @@ input
 	box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 5px rgba(0,0,0,0.15)
 	text-shadow: 0 1px 1px rgba(0,0,0,0.15)
 	-webkit-transition: 0.25s
+	-moz-transition: 0.25s
 	&:focus
 		outline: none
 		+ .button
@@ -66,14 +68,12 @@ input
 	font-size: 2em
 	color: #FDF6E3
 	border-radius: 5px
-	border-bottom: 1px solid rgba(0,0,0,0.25)
-	box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 1px rgba(0,0,0,0.25)
+	border-bottom: 2px solid rgba(0,0,0,0.25)
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25)
 	text-shadow: 0 1px 1px rgba(0,0,0,0.3)
 	-webkit-transition: all 0.4s
+	-moz-transition: all 0.4s
 	&:active
 		border-bottom: 0
 		text-shadow: 0 -1px 1px rgba(0,0,0,0.3)
-		+ .border
-			border: 1px solid #E6D9C3
-			margin-top: 2px
 	
